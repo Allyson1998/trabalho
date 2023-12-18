@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+</head>
+<body>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}"/>
+
+  <div class="Title">
+    <h1>Olá</h1>
+    <h2>Bem vindo de Volta!</h2> <br> <br>
+  </div>
+
+  <div class="txt_boxes_div">
+    <input type="text" class="txt_boxes" placeholder="Email"> <br/>
+    <input type="text" class="txt_boxes" placeholder="Senha"> <br/>
+  </div>
+  
+  <div class="redefine_password_div">
+    esqueceu a senha?
+  </div>
+
+  <div class="btn_div">
+    <button type="button"  class="btn_login">Entrar</button> <br/>
+  </div>
+
+  <div class="already_registered_div">
+    ja se cadastrou?
+  </div>
+  
+</body>
+</html>

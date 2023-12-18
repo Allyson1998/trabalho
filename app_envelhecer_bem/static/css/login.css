@@ -1,0 +1,76 @@
+* body {
+  background: linear-gradient(180deg, rgba(146, 252, 170, 0.40) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
+  margin: 0;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+
+.Title {
+  color: #199D81;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 80px;
+  line-height: 24px;
+}
+
+.txt_boxes_div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.txt_boxes {
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 4px 6px 0px rgba(30, 30, 30, 0.26);
+  width: 280px;
+  height: 36px;
+  vertical-align: 25px;
+  font-size: 15px;
+  text-indent: 15px;
+}
+
+.txt_boxes:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.redefine_password_div {
+  text-align: center;
+  margin-left: 100px;
+  color: #FFF;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.btn_div {
+  text-align: center;
+}
+
+.btn_login {
+  border-radius: 25px;
+  background: linear-gradient(94deg, rgba(182, 255, 227, 0.25) 36.11%, rgba(61, 156, 137, 0.00) 100%), #10CCA8;
+  box-shadow: 0px 4px 6px 0px rgba(30, 30, 30, 0.26);
+  border-radius: 25px;
+  border: none;
+  width: 244px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #FFF;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.btn_login:active {
+  background: linear-gradient(94deg, rgba(182, 255, 227, 0.25) 36.11%, rgba(61, 156, 137, 0.00) 100%), #10CCA8;;
+  box-shadow: 0 4px #666;
+  transform: translateY(2px);
+}
+
+.already_registered_div {
+  color: #FFF;
+  font-style: italic;
+   position: fixed;     
+   text-align: center;    
+   bottom: 0px; 
+   width: 100%;
+}
