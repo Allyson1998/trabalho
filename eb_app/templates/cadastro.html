@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cuidador</title>
+
+</head>
+<body>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static '/css/cadastro.css' %}"/>
+
+  <div class="Title">
+    <h1>Criar conta </h1>
+    <h2>Seja bem-vindo!</h2> <br> <br>
+  </div>
+
+  <form class="form" action="{% url 'cadastro' %}" method="POST">{% csrf_token %}
+    <input type="text" class="txt_boxes" placeholder="Nome" name="name"> <br/>
+    <input type="text" class="txt_boxes" placeholder="Nome de Usuário" name="username"> <br/>
+    <input type="email" class="txt_boxes" placeholder="Email" name="email"> <br/>
+    <input type="password" class="txt_boxes" placeholder="Senha" name="password"> <br/>
+    <input type="password" class="txt_boxes" placeholder="Confirmar Senha" name="password2">
+
+    <div class="btn_div">
+      <button type="submit"  class="btn_signup" value="signup"> Cadastrar-se </button> <br/>
+    </div>
+  </form>
+
+</body>
+</html>
