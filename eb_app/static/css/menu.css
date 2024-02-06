@@ -2,10 +2,11 @@
     background: linear-gradient(180deg, rgba(146, 252, 170, 0.20) 23.77%, rgba(60, 172, 150, 0.02) 100%), #AAE7DC;
     background-attachment: fixed;
   }
-.buttons_div {
-    width: 3500px;
-    height: 360px;
-    
+.menu_principal_buttons {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center
 }
 
 button{
