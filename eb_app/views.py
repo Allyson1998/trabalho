@@ -39,3 +39,6 @@ def login(request):
             return HttpResponse('autenticado')
         else: 
             return HttpResponse('email ou senha invalidos')
+
+def menu(request):
+        return render(request, 'menu.html')

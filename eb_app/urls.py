@@ -5,4 +5,5 @@ urlpatterns = [
     path('cadastro/', views.cadastro, name='cadastro'),
     path('login/', views.login, name='login'),
     path('', views.home, name='home'),
+    path('menu/', views.menu, name='menu'),
 ]
