@@ -1,47 +1,54 @@
 * body {
-  background: linear-gradient(180deg, rgba(146, 252, 170, 0.40) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
+  background: linear-gradient(180deg, rgba(150, 255, 175, 0.4) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
   margin: 0;
   background-attachment: fixed;
   font-family: sans-serif;
   text-align: center;
-  
+   min-height: 100vh;
+
 }
 html {
-  font-family:  sans-serif;
-  font-size: 100%;
-  line-height: 1.4;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 120%;
+  line-height: 1.2;
   font-weight: 300;
   color: black;
 }
+
+body {
+  min-height: 100vh;
+  background: aquamarine;
+}
+
 main {
   max-width: max-content;
   margin: 3em auto 0 auto;
   padding: 1.5em;
-  background-color: #fff;
-  border: 2px solid rgb(255, 255, 255);
+  background-color: #ffffff;
+  border: 2px solid gray;
   border-radius: 8px;
 }
 
 
-.mes-indicador {
+.month-indicator {
   color:black;
   text-align: center;
   font-weight: 500;
 }
 
 
-.dia-da-semana,
-.grade-de-datas {
+.day-of-week,
+.date-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
 
 
-.dia-da-semana{
+.day-of-week {
   margin-top: 1.25em;
 }
 
-.dia-da-semana > * {
+.day-of-week > * {
   font-size: 0.7em;
   color:black;
   font-weight: 500;
@@ -51,34 +58,34 @@ main {
 }
 
 
-.grade-de-data {
+.date-grid {
   margin-top: 0.5em;
 }
 
-.grade-de-data button:first-child {
+
+.date-grid button:first-child {
   grid-column: 6;
 }
 
-
-.grade-de-data button {
+.date-grid button {
   position: relative;
   border: 0;
   width: 4.5ch;
   height: 4.5ch;
   border-radius: 50%;
-  background-color: transparent;
-  color: gray;
+  background-color: rgb(255, 255, 255);
+  color:gray;
 }
 
-.grade-de-data button:hover,
-.grade-de-data button:focus {
+.date-grid button:hover,
+.date-grid button:focus {
   outline: none;
-  background-color: black;
-  color: black;
+  background-color:rgba(0, 0, 0, 0.411);
+  color: rgb(0, 0, 0);
 }
 
-.grade-de-data button:active,
-.grade-de-data button.is-selected {
-  background-color: black;
+.date-grid button:active,
+.date-grid button.is-selected {
+  background-color: var(--teal-100);
   color: black;
 }
