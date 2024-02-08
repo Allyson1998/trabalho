@@ -42,3 +42,5 @@ def login(request):
 
 def menu(request):
         return render(request, 'menu.html')
+def consulta(request):
+        return render(request, 'consulta.html')

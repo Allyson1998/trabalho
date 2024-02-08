@@ -1,0 +1,84 @@
+* body {
+  background: linear-gradient(180deg, rgba(146, 252, 170, 0.40) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
+  margin: 0;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+html {
+  font-family:  sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  font-weight: 300;
+  color: black;
+}
+main {
+  max-width: max-content;
+  margin: 3em auto 0 auto;
+  padding: 1.5em;
+  background-color: #fff;
+  border: 2px solid var(--blue-grey-200);
+  border-radius: 8px;
+}
+
+
+.mes-indicador {
+  color: var(--blue-grey-700);
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.dia-da-semana,
+.grade-de-datas {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+.dia-da-semana{
+  margin-top: 1.25em;
+}
+
+.dia-da-semana > * {
+  font-size: 0.7em;
+  color: var(--blue-grey-400);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+
+.grade-de-data {
+  margin-top: 0.5em;
+}
+
+.grade-de-data button:first-child {
+  grid-column: 6;
+}
+
+
+.grade-de-data button {
+  position: relative;
+  border: 0;
+  width: 4.5ch;
+  height: 4.5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--blue-grey-600);
+}
+
+.grade-de-data button:hover,
+.grade-de-data button:focus {
+  outline: none;
+  background-color: var(--blue-grey-050);
+  color: var(--blue-grey-700);
+}
+
+.grade-de-data button:active,
+.grade-de-data button.is-selected {
+  background-color: var(--teal-100);
+  color: var(--teal-900);
+}
