@@ -36,11 +36,11 @@ def login(request):
         user = authenticate(username=username, password=password)
         
         if user:
-            return HttpResponse('autenticado')
+            return render(request, "main_menu.html")
         else: 
             return render(request, "erro.html")
 
-def menu(request):
-        return render(request, 'menu.html')
+def main_menu(request):
+        return render(request, 'main_menu.html')
 def consulta(request):
         return render(request, 'consulta.html')

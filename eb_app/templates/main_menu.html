@@ -1,0 +1,53 @@
+<!-- Allyson -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelhecer Bem</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/menu.css' %}"/>
+  
+</head>
+<body>
+
+    <header>
+        <div class="nome_temporario">
+            <img src="{% static 'imgs/icone_header.png' %}">
+        </div>
+    </header>
+
+    <div class="menu_principal_buttons">
+
+        <div class="button_column_one">
+            <button class="green_btn" id="my_health_btn"> 
+                <img src="{% static 'imgs/icone_minha_saude.png' %}">
+                <h3>Minha saúde</h3>
+                Seu histórico de saúde.
+            </button>
+
+            <button class="white_btn" id="community_btn">
+                <img src="{% static 'imgs/icone_comunidade.png' %}">
+                <h3>Comunidade</h3>
+            </button>
+        </div>
+
+        <div class="button_column_two">  
+
+            <button class="white_btn" id="medicine_btn">
+                <img src="{% static 'imgs/icone_medicamento.png' %}">
+                <h3>Medicamentos</h3>
+            </button>
+        
+            <a href="/consulta">
+                <button class="green_btn" id="appointment_btn">
+                    <img src="{% static 'imgs/icone_consultas.png' %}"> 
+                    <h3>Consultas</h3>
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
