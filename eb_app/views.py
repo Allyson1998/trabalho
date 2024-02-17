@@ -44,3 +44,7 @@ def menu(request):
         return render(request, 'menu.html')
 def consulta(request):
         return render(request, 'consulta.html')
+def validacao(request):
+        return render(request, 'validacao.html')
+def conta(request):
+        return render(request, 'conta.html')

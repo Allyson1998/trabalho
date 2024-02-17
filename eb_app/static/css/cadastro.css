@@ -1,5 +1,5 @@
 * body {
-    background: linear-gradient(180deg, rgba(146, 252, 170, 0.40) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
+    background: linear-gradient(180deg, #a9ffbd66 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
     margin: 0;
     background-attachment: fixed;
     font-family: sans-serif;

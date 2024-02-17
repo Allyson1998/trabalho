@@ -1,6 +1,5 @@
 body {
     background: linear-gradient(180deg, rgba(146, 252, 170, 0.40) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
-
     background-attachment: fixed;
     border-radius: 15%;
     text-align: center;
@@ -8,9 +7,17 @@ body {
 
   .btns {
     text-align: center;
-    align-self: center;
+    justify-content: center;
+    text-align: center;
+   
   }
+  .organize{
+    display: flex;
+    justify-content: center;
+    text-align: center;
   
+  }
+
   
   .btn_signup {
     border-radius: 25px;
@@ -23,9 +30,9 @@ body {
     width: 244px;
     height: 60px;
     flex-shrink: 0;
-    color: #FFF;
+    color: #ffffff;
     margin-top: 20px;
-    font-size: 22px;
+    font-weight: 44px;
   }
   
   .btn_signup:active {
