@@ -1,0 +1,92 @@
+* body {
+  background: linear-gradient(180deg, rgba(146, 252, 170, 0.20) 23.77%, rgba(60, 172, 150, 0.02) 100%), #AAE7DC;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  }
+
+header {
+  width: 100%;
+  height: 133px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 20px 20px;
+  background: linear-gradient(257deg, rgba(146, 252, 170, 0.20) 63.32%, rgba(102, 209, 168, 0.00) 85.79%), #3CAC96;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
+}
+
+.nome_temporario img {
+  width: 100px;
+  height: 10x;
+}
+
+.menu_principal_buttons {
+  text-align: center;
+  margin-top: 70px;
+  
+}
+
+.button_column_one{
+  margin-bottom: 25px;
+}
+
+.button_column_two{
+  margin-bottom: 25px;
+}
+
+.green_btn{
+  width: 160px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #2EB097;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #FFF;
+}
+
+.white_btn{
+  width: 160px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #2EB097;
+}
+
+.medicine_btn{
+  width: 160px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.appointment_btn{
+  width: 160px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #2EB097;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+.green_btn:active{
+  background: linear-gradient(94deg, rgba(182, 255, 227, 0.25) 36.11%, rgba(61, 156, 137, 0.00) 100%), #2EB097;
+  transform: translateY(2px);
+}
+
+.white_btn:active{
+    background: #FFF;
+    transform: translateY(2px);
+}
+
+button img {
+  width: 60px;
+  height: 30x;
+}
+

@@ -1,0 +1,40 @@
+<!-- Allyson -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}"/>
+  
+</head>
+<body>
+
+  <div class="title">
+    <h1>Olá</h1>
+    <h2>Bem vindo de Volta!</h2> <br> <br>
+  </div>
+
+  <form class="form" action="{% url 'login' %}" method="POST"> {% csrf_token %}
+    <input type="text" class="txt_boxes" placeholder="Username" name="username"> <br/>
+    <input type="password" class="txt_boxes" placeholder="Senha" name="password"> <br/>
+
+    <div class="btn_div">
+      <button type="submit"  class="btn_login" value="login">Entrar</button> <br/>
+    </div>
+
+  </form>
+  
+  <div class="redefine_password_div">
+    esqueceu a senha?
+  </div>
+
+  <div class="already_registered_div">
+    ja se cadastrou?
+  </div>
+  
+</body>
+</html>
