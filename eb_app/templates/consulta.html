@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultas</title>
 
-    <script>
-      dia = 2;
-    </script>
-
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static '/css/consulta.css' %}"/>
 </head>
@@ -41,8 +37,8 @@
         <div>Sab</div>
         <div>Dom</div>
       </div>
-      <div class="date-grid">
-        <button type="submit" id="btn1" value="1">
+      <form id="calendario-consultas" class="date-grid">
+        <button>
           <time datetime="2024-02-01">1</time>
         </button>
         <button>
@@ -134,13 +130,12 @@
   </main><br>
   <div class = "alinhamento">
   <div  class="agendamento">
-    <div class="day"><p> <script type="text/javascript"> document.write(dia) </script><br>9</p></div>
-    <div class= "hours">12:00</div>
-    <div class= "info">consulta</div>
+    <div class="day"> <script type="text/javascript"> document.write(diaAgendamento) </script></div>
+    <div class= "hora">-</div>
+    <div class= "info">-</div>
     </div>
   </div>
-  
-  
+  <script src="{% static '/js/calendario.js' %}"></script>
 </body>
 
 </html>
