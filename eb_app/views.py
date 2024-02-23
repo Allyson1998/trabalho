@@ -19,12 +19,12 @@ def cadastro(request):
         user = User.objects.filter(username=username).first()
 
         if user:
-            return HttpResponse('Já existe um usuário com esse username')
+            return render(request, 'erro_cadastro.html')
 
         user = User.objects.create_user(username=username, email=email, password=password)
         user.save()
 
-        return HttpResponse('usuario cadastrado com sucesso')
+        return render(request, 'login.html')   
 
 def login(request):
     if request.method == "GET":
@@ -36,12 +36,12 @@ def login(request):
         user = authenticate(username=username, password=password)
         
         if user:
-            return HttpResponse('autenticado')
+            return render(request, "main_menu.html")
         else: 
-            return render(request, "erro.html")
+            return render(request, "erro_login.html")
 
-def menu(request):
-        return render(request, 'menu.html')
+def main_menu(request):
+        return render(request, 'main_menu.html')
 def consulta(request):
         return render(request, 'consulta.html')
 def validacao(request):

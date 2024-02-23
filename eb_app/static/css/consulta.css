@@ -1,0 +1,156 @@
+* body {
+  background: linear-gradient(180deg, rgba(150, 255, 175, 0.4) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
+  margin: 0;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  text-align: center;
+   min-height: 100vh;
+
+}
+html {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 120%;
+  line-height: 1.2;
+  font-weight: 300;
+  color: black;
+}
+
+body {
+  min-height: 100vh;
+  background: aquamarine;
+}
+
+main {
+  max-width: max-content;
+  margin: 3em auto 0 auto;
+  padding: 1.5em;
+  background-color: #ffffff;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+
+.month-indicator {
+  color:black;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.day-of-week,
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+.day-of-week {
+  margin-top: 1.25em;
+}
+
+.day-of-week > * {
+  font-size: 0.7em;
+  color:black;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+
+.date-grid {
+  margin-top: 0.5em;
+}
+
+
+.date-grid button:first-child {
+  grid-column: 6;
+}
+
+.date-grid button {
+  position: relative;
+  border: 0;
+  width: 4.5ch;
+  height: 4.5ch;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  color:gray;
+}
+
+.date-grid button:hover,
+.date-grid button:focus {
+  outline: none;
+  background-color:rgba(0, 0, 0, 0.411);
+  color: rgb(0, 0, 0);
+}
+
+.date-grid button:active,
+.date-grid button.is-selected {
+  background-color: var(--teal-100);
+  color: black;
+}
+.agendamento{
+  border: 1px solid #ffffff; 
+  border-radius: 8px; 
+  padding: 0;
+  width: 300px; 
+  height: 80px;
+  margin: 10px; 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+}
+
+.day, .hours, .info {
+  text-align: center; 
+}  
+.alinhamento {
+  display: flex;
+  justify-content: center;
+}
+.day {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  font-size: 18px; 
+  color: #000000; 
+  background-color: #16dbaa;
+  text-align: center;
+  border-radius: inherit;
+  align-self: center;
+  
+}
+
+.day p {
+  padding: 3px 12px;
+  color: #fff;
+  font-weight: 750;
+}
+
+.hours {
+  display:flex;
+  width: 50px;
+  height: 20px;
+  font-size: 14px; 
+  color: #000000; 
+  background-color: #ffffff;
+  text-align: center;
+  border-radius:10%;
+  margin-left:50px;
+}
+
+
+.info {
+  display:flex;
+  width: 50px;
+  height: 20px;
+  font-size: 14px; 
+  color: #030303; 
+  background-color: #ffffff;
+  text-align:center;
+  margin-left: 80px;
+  border-radius:10%;
+}

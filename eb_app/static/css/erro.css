@@ -2,8 +2,6 @@ body {
     background: linear-gradient(180deg, rgba(146, 252, 170, 0.40) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
 
     background-attachment: fixed;
-    border-radius: 15%;
-    text-align: center;
   }
 
   .btns {
@@ -11,6 +9,14 @@ body {
     align-self: center;
   }
   
+  .title {
+    color: #199D81;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 80px;
+    line-height: 24px;
+    text-align: center;
+  }
   
   .btn_signup {
     border-radius: 25px;
