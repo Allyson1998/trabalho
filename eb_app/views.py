@@ -48,3 +48,5 @@ def validacao(request):
         return render(request, 'validacao.html')
 def conta(request):
         return render(request, 'conta.html')
+def horarios(request):
+        return render(request, 'horarios.html')

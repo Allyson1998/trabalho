@@ -1,0 +1,27 @@
+* body {
+  background: linear-gradient(180deg, rgba(146, 252, 170, 0.20) 23.77%, rgba(60, 172, 150, 0.02) 100%), #AAE7DC;
+  background-attachment: fixed;
+}
+.menu_principal_buttons {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  text-align: center
+}
+
+button{
+  width: 178px;
+  height: 223px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #2EB097;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  text-align: center;
+}
+
+button:active {
+  background: linear-gradient(94deg, rgba(182, 255, 227, 0.25) 36.11%, rgba(61, 156, 137, 0.00) 100%), #2EB097;
+  transform: translateY(2px);
+}
+
