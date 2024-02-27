@@ -1,6 +1,8 @@
 * body {
   background: linear-gradient(180deg, rgba(146, 252, 170, 0.20) 23.77%, rgba(60, 172, 150, 0.02) 100%), #AAE7DC;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
   }
 
   header {

@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <div class="nome_temporario">
+        <div class="header_btn_div">
             <img src="{% static 'imgs/icone_header.png' %}">
         </div>
     </header>
@@ -35,12 +35,12 @@
         </div>
 
         <div class="button_column_two">  
-
-            <button class="white_btn" id="medicine_btn">
-                <img src="{% static 'imgs/icone_medicamento.png' %}">
-                <h3>Medicamentos</h3>
-            </button>
-        
+            <a href="/medicamentos">
+                <button class="white_btn" id="medicine_btn">
+                    <img src="{% static 'imgs/icone_medicamento.png' %}">
+                    <h3>Medicamentos</h3>
+                </button>
+            </a>
             <a href="/consulta">
                 <button class="green_btn" id="appointment_btn">
                     <img src="{% static 'imgs/icone_consultas.png' %}"> 

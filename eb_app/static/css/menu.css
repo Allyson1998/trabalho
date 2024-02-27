@@ -14,8 +14,14 @@ header {
   box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
 }
 
-.nome_temporario img {
-  width: 100px;
+.header_btn_div {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.header_btn_div img {
+  width: 75px;
   height: 10x;
 }
 
