@@ -1,23 +1,47 @@
 * body {
-  background: linear-gradient(180deg, rgba(150, 255, 175, 0.4) 18.88%, rgba(102, 209, 168, 0.04) 85.99%,     rgba(98, 205, 168, 0.00) 103.65%), #3CAC96;
-  margin: 0;
+  background: linear-gradient(180deg, rgba(146, 252, 170, 0.20) 23.77%, rgba(60, 172, 150, 0.02) 100%), #AAE7DC;
   background-attachment: fixed;
-  font-family: sans-serif;
-  text-align: center;
-   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 
 }
+
+header {
+  width: 100%;
+  height: 133px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 20px 20px;
+  background: linear-gradient(257deg, rgba(146, 252, 170, 0.20) 63.32%, rgba(102, 209, 168, 0.00) 85.79%), #3CAC96;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.15);
+}
+
+.header_btn_div {
+  position: relative;
+  left: 0px;
+  top: 5px;
+}
+
+.header_btn_div img {
+  position: absolute;
+  width: 65px;
+  height: 10x;
+  left: 20px;
+  top: 20px;
+}
+
+.header_title_div {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
 html {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 120%;
   line-height: 1.2;
   font-weight: 300;
   color: black;
-}
-
-body {
-  min-height: 100vh;
-  background: aquamarine;
 }
 
 main {
@@ -28,7 +52,6 @@ main {
   border: 2px solid gray;
   border-radius: 8px;
 }
-
 
 .month-indicator {
   color:black;
@@ -57,11 +80,9 @@ main {
   text-align: center;
 }
 
-
 .date-grid {
   margin-top: 0.5em;
 }
-
 
 .date-grid button:first-child {
   grid-column: 6;
@@ -112,7 +133,7 @@ main {
   justify-content: center;
 }
 .day {
-  width: 50px;
+  width: 70px;
   height: 100%;
   display: flex;
   font-size: 18px; 
@@ -141,7 +162,6 @@ main {
   border-radius:10%;
   margin-left:50px;
 }
-
 
 .info {
   display:flex;

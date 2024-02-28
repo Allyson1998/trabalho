@@ -6,15 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultas</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/consulta.css' %}"/>
 </head>
 <body>
     
-    {% load static %}
-  <link rel="stylesheet" type="text/css" href="{% static '/css/consulta.css' %}"/>
+  <header>
+    <div class="header_btn_div">
+      <img src="{% static 'imgs/icone_header.png' %}">
+    </div>
+    <div class="header_title_div">
+      <h1>Consultas</h1>
+    </div>
+</header>
 
-  <div>
-    <h1>Consultas</h1>
-</div>
 <main>
     <div class="calendar">
       <div class="month-indicator">
@@ -29,7 +35,7 @@
         <div>Sab</div>
         <div>Dom</div>
       </div>
-      <div class="date-grid">
+      <form id="calendario-consultas" class="date-grid">
         <button>
           <time datetime="2024-02-01">1</time>
         </button>
@@ -122,13 +128,12 @@
   </main><br>
   <div class = "alinhamento">
   <div  class="agendamento">
-    <div class="day"><p>dia<br>9</p></div>
-    <div class= "hours">12:00</div>
-    <div class= "info">consulta</div>
+    <div class="day"> <script type="text/javascript"> document.write(diaAgendamento) </script></div>
+    <div class= "hora">-</div>
+    <div class= "info">-</div>
     </div>
   </div>
-  
-  
+  <script src="{% static '/js/calendario.js' %}"></script>
 </body>
 
 </html>
